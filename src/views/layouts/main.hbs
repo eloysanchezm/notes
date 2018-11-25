@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Notas App</title>
+	<!-- BOOTSTRAP --> 
+	<link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<!-- CUSTOM CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+{{> navigation}}
+<main class="container p-4">{{> messages}}{{> errors}}{{{ body }}}</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</html>
