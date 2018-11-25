@@ -1,11 +1,8 @@
 const router = require('express').Router();
+const {isAuthenticated} = require('../helpers/auth');
 
-router.get('/', (req, res) => {
-	res.render('index');
-});
-
-router.get('/about', (req, res) => {
-	res.render('about');
+router.get('/', isAuthenticated, (req, res) => {
+	res.render('notes/list');
 });
 
 module.exports = router;
